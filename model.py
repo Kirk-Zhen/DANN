@@ -2,10 +2,10 @@ import torch.nn as nn
 from functions import ReverseLayerF
 
 
-class CNNModel(nn.Module):
+class DANN(nn.Module):
 
     def __init__(self):
-        super(CNNModel, self).__init__()
+        super(DANN, self).__init__()
         self.feature = nn.Sequential()
         self.feature.add_module('f_conv1', nn.Conv2d(3, 64, kernel_size=5))
         self.feature.add_module('f_bn1', nn.BatchNorm2d(64))
