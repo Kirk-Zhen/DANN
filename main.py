@@ -11,6 +11,7 @@ from torchvision import transforms
 from model import DANN
 from test import test
 
+
 source_dataset_name = 'MNIST'
 target_dataset_name = 'mnist_m'
 source_image_root = os.path.join('dataset', source_dataset_name)
@@ -21,7 +22,7 @@ cudnn.benchmark = True
 lr = 1e-3
 batch_size = 128
 image_size = 28
-n_epoch = 100
+n_epoch = 50
 
 manual_seed = random.randint(1, 10000)
 random.seed(manual_seed)
